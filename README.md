@@ -1,49 +1,34 @@
-Helpdesk Automation
-Projeto em Python para automatizar o tratamento de chamados e gerar um relatório profissional de SLA.
+# Helpdesk Automation
 
-Objetivo
-Transformar dados brutos de tickets em um relatório organizado, útil para suporte técnico e análise operacional.
+## 🚀 Descrição do Projeto
 
-Tecnologias
-Python
+Este projeto demonstra a automação de tarefas comuns em um ambiente de Help Desk de TI utilizando **Python**. Ele simula o processamento de chamados, categorizando-os por urgência, gerando um relatório de **Service Level Agreement (SLA)** em formato HTML e simulando o envio de notificações por e-mail. 
 
-Pandas
+O objetivo é apresentar habilidades em automação, manipulação de dados e geração de relatórios, competências essenciais para qualquer profissional de TI, especialmente em busca da primeira oportunidade de estágio.
 
-Jinja2
+## ✨ Funcionalidades
 
-smtplib
+*   **Leitura de Chamados:** Processa uma lista de chamados a partir de um arquivo CSV utilizando a biblioteca Pandas.
+*   **Categorização Automática:** Classifica os chamados com base em sua prioridade (Alta, Média, Baixa) em categorias de urgência (Crítico, Urgente, Normal).
+*   **Monitoramento de SLA:** Calcula e exibe o status de conformidade com o SLA para cada chamado.
+*   **Relatório Visual:** Gera um relatório HTML moderno e responsivo com estatísticas gerais e detalhes dos chamados através do motor de templates Jinja2.
+*   **Notificação por E-mail:** Estrutura pronta para envio de e-mails via SMTP para gestores ou equipes de suporte.
 
-Estrutura inicial
-text
+## 🛠️ Tecnologias Utilizadas
+
+*   **Python 3.x:** Linguagem base para toda a lógica de automação.
+*   **Pandas:** Manipulação e análise de dados eficiente.
+*   **Jinja2:** Criação de templates dinâmicos para o relatório HTML.
+*   **smtplib:** Comunicação com servidores de e-mail (SMTP).
+*   **HTML/CSS:** Estilização do relatório de SLA.
+
+## 📁 Estrutura do Projeto
+
+```text
 helpdesk-automation/
-├── main.py
-├── tickets.csv
-├── templates/
-│   └── report.html
-├── output/
-│   └── sla_report.html
-└── README.md
-Como funciona
-O script lê o arquivo tickets.csv.
-
-Os dados são tratados com pandas.
-
-O relatório HTML é montado com jinja2.
-
-O arquivo final é salvo em output/sla_report.html.
-
-Como executar
-bash
-python main.py
-Próximos passos
-Adicionar métricas de SLA por prioridade.
-
-Incluir envio automático por e-mail.
-
-Registrar logs de execução.
-
-Melhorar a validação dos dados de entrada.
-
-Autor
-Seu Nome
-
+├── main.py              # Script principal com a lógica de automação
+├── tickets.csv          # Banco de dados simulado (CSV)
+├── requirements.txt     # Dependências do projeto
+├── README.md            # Documentação do projeto
+└── templates/
+    └── report.html      # Template HTML para o relatório
